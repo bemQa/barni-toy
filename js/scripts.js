@@ -50,6 +50,16 @@ $(document).ready(function () {
         $('body').removeClass('no-scrolling');
     }
 
+    $('.show-password').click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        if($('.password-input').attr('type') == 'password') {
+            $('.password-input').attr('type', 'text');
+        } else {
+            $('.password-input').attr('type', 'password');
+        }
+    });
+
     $('.table-wrapper').scrollbar();
     $('.faq-wrap').scrollbar();
     if(window.innerWidth < 1000) {

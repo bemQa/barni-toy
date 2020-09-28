@@ -808,6 +808,10 @@ footer a {
     margin: 0 auto 10px;
 }
 
+.title-rejected {
+    color: #E51435;
+}
+
 .popup__error {
     font-size: 12px;
     line-height: 1.2;
@@ -1042,6 +1046,27 @@ span.error {
     font-size: 14px;
     line-height: 1;
     color: #07CEFD;
+}
+
+.show-password {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 20px;
+    background: url(../img/show-password.svg) center no-repeat;
+    background-size: contain;
+}
+
+.show-password.active {
+    background: url(../img/hide-password.svg) center no-repeat;
+    background-size: contain;
+}
+
+.password-input.error + .show-password {
+    right: 35px;
 }
 
 .steps {
@@ -2072,6 +2097,7 @@ table td {
         font-size: 24px;
         line-height: 1;
         color: #fff;
+        text-transform: none;
         margin: 0 0 30px;
     }
 
@@ -2095,18 +2121,16 @@ table td {
         height: 20px;
     }
 
-    .profile-link::before,
-    .menu-links .menu-link:not(.login-link)::after {
+    .profile-link::before {
         display: none;
     }
 
-    .menu-links .login-link::after {
+    .menu-links .menu-link::after {
         content: '';
         position: absolute;
-        top: -15px;
         left: -125px;
         right: -125px;
-        bottom: auto;
+        bottom: -15px;
         width: 100%;
         min-width: 300px;
         height: 1px;
@@ -2316,6 +2340,8 @@ table td {
 
     .check-column.mobile-visible {
         display: flex;
+        -ms-align-items: center;
+        align-items: center;
     }
 
     .check-preview {
