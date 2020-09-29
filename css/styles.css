@@ -2245,6 +2245,10 @@ table td {
         transform: scale(.8);
     }
 
+    .step3 {
+        padding-top: 100px;
+    }
+
     .step-img {
         transform: scale(.9);
     }
@@ -2540,6 +2544,10 @@ table td {
     .step-title {
         font-size: 26px;
         line-height: 30px;
+    }
+
+    .step-text {
+        font-size: 15px;
     }
 
     .lk-table table td {
