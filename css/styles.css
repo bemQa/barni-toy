@@ -1145,6 +1145,14 @@ span.error {
     color: #07CEFD;
 }
 
+.step-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #0257AD;
+}
+
 .inner-page {
     position: relative;
     padding: 0 0 80px;
