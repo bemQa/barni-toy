@@ -1323,6 +1323,7 @@ table td {
 .check-preview {
     width: 32px;
     height: 32px;
+    margin: auto;
     overflow: hidden;
     border-radius: 50px;
     border: 1px solid #025EBC;
@@ -2360,6 +2361,7 @@ table td {
         width: 40px;
         height: 40px;
         border-radius: 10px;
+        margin: 0;
         margin-right: 10px;
     }
 
